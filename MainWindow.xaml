@@ -6,7 +6,23 @@
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+    <Grid ShowGridLines="True">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0" Grid.Column="1" Content="Label" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+        <TextBox Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" Text="TextBox"/>
+
+        <Button Grid.Row="2" Grid.Column="1" Content="Button" Margin="0,5,0,5"/>
     </Grid>
 </Window>
