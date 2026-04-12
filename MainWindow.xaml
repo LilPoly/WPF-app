@@ -6,12 +6,29 @@
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <StackPanel Margin="20">
-        <Label Content="Label" HorizontalAlignment="Center"/>
-        <TextBox Text="TextBox" Margin="0,2"/>
-        <TextBox Text="TextBox" Margin="0,2"/>
-        <TextBox Text="TextBox" Margin="0,2"/>
-        <TextBox Text="TextBox" Margin="0,2"/>
-        <Button Content="Button" Width="150" Margin="0,20,0,0" HorizontalAlignment="Center"/>
-    </StackPanel>
+<WrapPanel Width="520" Margin="20" HorizontalAlignment="Center" VerticalAlignment="Center">
+    
+    <Label Content="Label" Margin="2"/>
+    <TextBox Text="TextBox" Width="55" Margin="2"/>
+    <TextBox Text="TextBox" Width="55" Margin="2"/>
+    <TextBox Text="TextBox" Width="55" Margin="2"/>
+    <TextBox Text="TextBox" Width="55" Margin="2"/>
+    <TextBox Text="TextBox" Width="55" Margin="2"/>
+    <TextBox Text="TextBox" Width="55" Margin="2"/>
+    <TextBox Text="TextBox" Width="55" Margin="2"/>
+    <TextBox Text="TextBox" Width="55" Margin="2"/>
+
+    <Label Content="Label" Margin="2"/>
+    <TextBox Text="TextBox" Width="55" Margin="2"/>
+    <TextBox Text="TextBox" Width="55" Margin="2"/>
+    <TextBox Text="TextBox" Width="55" Margin="2"/>
+    <TextBox Text="TextBox" Width="55" Margin="2"/>
+    <TextBox Text="TextBox" Width="55" Margin="2"/>
+    <TextBox Text="TextBox" Width="55" Margin="2"/>
+    <TextBox Text="TextBox" Width="55" Margin="2"/>
+    <TextBox Text="TextBox" Width="55" Margin="2"/>
+
+    <Button Content="Button" Width="80" Margin="220,15,0,0"/>
+
+</WrapPanel>
 </Window>
