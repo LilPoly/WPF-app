@@ -30,19 +30,19 @@
         <Border Grid.Row="0" Background="{StaticResource LinearPanelBrush}" BorderBrush="#FFCBBEBE" BorderThickness="2" CornerRadius="10" Margin="5">
             <StackPanel Orientation="Horizontal" Margin="5">
                 
-                <Button ToolTip="Відкрити" Width="60" Height="60">
+                <Button ToolTip="Відкрити" Command="Open" Focusable="False" Width="60" Height="60">
                     <Image Source="D:\KPI\6 семестр\wpf\WpfApp1\icons\img1.png" />
                 </Button>
                 
-                <Button ToolTip="Стерти" Width="60" Height="60">
+                <Button ToolTip="Стерти" Command="Delete" Focusable="False" Width="60" Height="60">
                     <Image Source="D:\KPI\6 семестр\wpf\WpfApp1\icons\img2.png" />
                 </Button>
                 
-                <Button ToolTip="Копіювати" Width="60" Height="60">
+                <Button ToolTip="Копіювати" Command="Copy" CommandTarget="{Binding ElementName=txtDocument}" Focusable="False" Width="60" Height="60">
                     <Image Source="D:\KPI\6 семестр\wpf\WpfApp1\icons\img3.png" />
                 </Button>
                 
-                <Button ToolTip="Вставити" Width="60" Height="60">
+                <Button ToolTip="Вставити" Command="Paste" CommandTarget="{Binding ElementName=txtDocument}" Focusable="False" Width="60" Height="60">
                     <Image Source="D:\KPI\6 семестр\wpf\WpfApp1\icons\img4.png" />
                 </Button>
                 
@@ -64,7 +64,7 @@
                     <Label DockPanel.Dock="Left" Content="Розмір шрифту:"/>
                     <Slider DockPanel.Dock="Left" Name="fontSlider" Margin="4" MinWidth="100" Maximum="100" Minimum="12" Value="12"/>
                     
-                    <Button Style="{x:Null}" DockPanel.Dock="Right" Content="OK" Width="50" HorizontalAlignment="Center"/>
+                    <Button Style="{x:Null}" Command="Save" Focusable="False" DockPanel.Dock="Right" Content="OK" Width="50" HorizontalAlignment="Center"/>
                     
                 </DockPanel>
             </Grid>
