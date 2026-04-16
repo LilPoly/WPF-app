@@ -5,14 +5,36 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-<Canvas Background="Cyan">
+        Title="TextEditor" Height="450" Width="800">
     
-    <Label Canvas.Left="20" Canvas.Top="20" Content="Label"/>
-    
-    <TextBox Canvas.Left="40" Canvas.Top="40" Text="text" Padding="2" Background="White"/>
-    
-    <Button Canvas.Left="60" Canvas.Top="60" Content="button" Padding="4,2"/>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
 
-</Canvas>
+        <Border Grid.Row="0" BorderBrush="#FFCBBEBE" BorderThickness="2" CornerRadius="10" Margin="5">
+            
+            <StackPanel Orientation="Horizontal" Margin="5">
+                
+                <Button ToolTip="Відкрити" Margin="2" Width="60" Height="60">
+                    <Image Source="D:\KPI\6 семестр\wpf\WpfApp1\icons\img1.png" />
+                </Button>
+                
+                <Button ToolTip="Стерти" Margin="2" Width="60" Height="60">
+                    <Image Source="D:\KPI\6 семестр\wpf\WpfApp1\icons\img2.png" />
+                </Button>
+                
+                <Button ToolTip="Копіювати" Margin="2" Width="60" Height="60">
+                    <Image Source="D:\KPI\6 семестр\wpf\WpfApp1\icons\img3.png" />
+                </Button>
+                
+                <Button ToolTip="Вставити" Margin="2" Width="60" Height="60">
+                    <Image Source="D:\KPI\6 семестр\wpf\WpfApp1\icons\img4.png" />
+                </Button>
+                
+            </StackPanel>
+        </Border>
+        
+    </Grid>
 </Window>
