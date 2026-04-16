@@ -14,7 +14,6 @@
         </Grid.RowDefinitions>
 
         <Border Grid.Row="0" BorderBrush="#FFCBBEBE" BorderThickness="2" CornerRadius="10" Margin="5">
-            
             <StackPanel Orientation="Horizontal" Margin="5">
                 
                 <Button ToolTip="Відкрити" Margin="2" Width="60" Height="60">
@@ -34,6 +33,23 @@
                 </Button>
                 
             </StackPanel>
+        </Border>
+
+        <Border Grid.Row="1" BorderBrush="#FFCBBEBE" BorderThickness="2" CornerRadius="10" Margin="5">
+            
+            <Grid Margin="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <TextBox Grid.Row="0" VerticalScrollBarVisibility="Auto" AcceptsReturn="True" TextWrapping="Wrap" Margin="0,0,0,10"/>
+                
+                <DockPanel Grid.Row="1" LastChildFill="False">
+                    <Button DockPanel.Dock="Bottom" Content="OK" Width="50" HorizontalAlignment="Center"/>
+                </DockPanel>
+            </Grid>
+            
         </Border>
         
     </Grid>
